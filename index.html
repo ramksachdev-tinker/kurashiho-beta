@@ -1,68 +1,504 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.4">
-  <style type="text/css">
-    body {background-color: #14110e}
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 15.0px 'Helvetica Neue'; color: #f9f4ea; -webkit-text-stroke: #f9f4ea}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 15.0px 'Helvetica Neue'; color: #bb561f; -webkit-text-stroke: #bb561f}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Helvetica Neue'; color: #f9f4ea; color: rgba(249, 244, 234, 0.28); -webkit-text-stroke: rgba(249, 244, 234, 0.28)}
-    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'Helvetica Neue'; color: #f9f4ea; -webkit-text-stroke: #f9f4ea; min-height: 18.0px}
-    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.0px 'Helvetica Neue'; color: #bb561f; -webkit-text-stroke: #bb561f}
-    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 16.0px 'Helvetica Neue'; color: #f9f4ea; -webkit-text-stroke: #f9f4ea; background-color: #f9f4ea; background-color: rgba(249, 244, 234, 0.15); min-height: 18.0px}
-    p.p8 {margin: 0.0px 0.0px 40.0px 0.0px; text-align: center; font: 15.0px 'Helvetica Neue'; color: #f9f4ea; color: rgba(249, 244, 234, 0.5); -webkit-text-stroke: rgba(249, 244, 234, 0.5)}
-    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 24.0px 'Helvetica Neue'; color: #f9f4ea; color: rgba(249, 244, 234, 0.38); -webkit-text-stroke: rgba(249, 244, 234, 0.38)}
-    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.0px 'Helvetica Neue'; color: #f9f4ea; color: rgba(249, 244, 234, 0.28); -webkit-text-stroke: rgba(249, 244, 234, 0.28)}
-    p.p11 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Helvetica Neue'; color: #f9f4ea; -webkit-text-stroke: #f9f4ea; min-height: 16.0px}
-    p.p12 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px 'Helvetica Neue'; color: #f9f4ea; -webkit-text-stroke: #f9f4ea; background-color: #bb561f}
-    p.p13 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.0px 'Helvetica Neue'; color: #f9f4ea; color: rgba(249, 244, 234, 0.18); -webkit-text-stroke: rgba(249, 244, 234, 0.18)}
-    p.p14 {margin: 0.0px 0.0px 0.0px 0.0px; font: 28.0px 'Hiragino Sans'; color: #bb561f; color: rgba(187, 86, 31, 0.3); -webkit-text-stroke: rgba(187, 86, 31, 0.3)}
-    p.p15 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Helvetica Neue'; color: #f9f4ea; color: rgba(249, 244, 234, 0.45); -webkit-text-stroke: rgba(249, 244, 234, 0.45)}
-    p.p16 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #f9f4ea; color: rgba(249, 244, 234, 0.22); -webkit-text-stroke: rgba(249, 244, 234, 0.22)}
-    p.p17 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Helvetica Neue'; color: #f9f4ea; color: rgba(249, 244, 234, 0.16); -webkit-text-stroke: rgba(249, 244, 234, 0.16)}
-    p.p18 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Helvetica Neue'; color: #f9f4ea; color: rgba(249, 244, 234, 0.16); -webkit-text-stroke: rgba(249, 244, 234, 0.16); background-color: #bb561f; min-height: 12.0px}
-    span.s1 {font-kerning: none}
-    span.s2 {font-kerning: none; color: rgba(249, 244, 234, 0.65); -webkit-text-stroke: 0px rgba(249, 244, 234, 0.65)}
-    span.s3 {font: 24.0px '.PingFang UI SC'; font-kerning: none}
-    span.s4 {font: 24.0px '.CJK Symbols Fallback SC'; font-kerning: none}
-    span.s5 {font: 24.0px 'PingFang SC'; font-kerning: none}
-    span.s6 {font-kerning: none; color: rgba(187, 86, 31, 0.75); -webkit-text-stroke: 0px rgba(187, 86, 31, 0.75)}
-    span.s7 {font-kerning: none; background-color: rgba(20, 17, 14, 0.6)}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>kurashiho — coming soon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --amber:    #C96B28;
+  --amber-2:  #E8973C;
+  --amber-soft: #F5DEC4;
+  --night:    #1A1510;
+  --cream:    #FAF6EE;
+  --warm-bg:  #EEEBE4;
+  --gray:     #8A8278;
+  --border:   rgba(26,21,16,.1);
+}
+
+html { font-size: 16px; }
+
+body {
+  background: var(--night);
+  color: var(--cream);
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-weight: 300;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ── background texture ── */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 110%, rgba(201,107,40,.18) 0%, transparent 65%),
+    radial-gradient(ellipse 40% 30% at 20% 80%, rgba(232,151,60,.07) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ── grain overlay ── */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+  opacity: .4;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ── layout ── */
+.page {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 52px 40px 44px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* ── top bar ── */
+.topbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  animation: fadeUp .9s ease both;
+}
+
+.wordmark {
+  display: flex;
+  align-items: baseline;
+  letter-spacing: .34em;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+}
+.wm-k { color: var(--cream); }
+.wm-h { color: var(--amber); }
+
+.domain {
+  font-size: 11px;
+  letter-spacing: .12em;
+  color: rgba(250,246,238,.28);
+}
+
+/* ── mark ── */
+.mark-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  animation: fadeUp .9s .1s ease both;
+  margin-top: 12vh;
+}
+
+.mark-glow {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mark-glow::before {
+  content: '';
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(201,107,40,.22) 0%, transparent 70%);
+  animation: pulse 4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50%       { transform: scale(1.08); opacity: .7; }
+}
+
+/* ── hero copy ── */
+.hero {
+  text-align: center;
+  max-width: 580px;
+  animation: fadeUp .9s .25s ease both;
+  margin-top: 4vh;
+}
+
+.hero-overline {
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin-bottom: 22px;
+}
+
+.hero-display {
+  font-family: 'Cormorant', Georgia, serif;
+  font-weight: 300;
+  font-size: clamp(34px, 6vw, 52px);
+  line-height: 1.12;
+  color: var(--cream);
+  margin-bottom: 28px;
+}
+.hero-display em {
+  font-style: italic;
+  color: rgba(250,246,238,.65);
+}
+
+.hero-body {
+  font-size: 15px;
+  line-height: 1.85;
+  color: rgba(250,246,238,.5);
+  font-weight: 300;
+  max-width: 460px;
+  margin: 0 auto 40px;
+}
+
+/* ── divider line ── */
+.thin-line {
+  width: 40px;
+  height: 0.5px;
+  background: rgba(250,246,238,.15);
+  margin: 0 auto 40px;
+}
+
+/* ── philosophy pull-quote ── */
+.pullquote {
+  font-family: 'Cormorant', Georgia, serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: clamp(18px, 3.5vw, 24px);
+  line-height: 1.55;
+  color: rgba(250,246,238,.38);
+  text-align: center;
+  max-width: 480px;
+  margin: 0 auto;
+  animation: fadeUp .9s .35s ease both;
+}
+.pullquote em {
+  font-style: normal;
+  color: rgba(201,107,40,.75);
+}
+
+/* ── notify form ── */
+.notify-section {
+  width: 100%;
+  max-width: 400px;
+  animation: fadeUp .9s .45s ease both;
+  margin-top: 6vh;
+}
+
+.notify-label {
+  font-size: 10px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: rgba(250,246,238,.28);
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.notify-form {
+  display: flex;
+  gap: 0;
+  border: 0.5px solid rgba(250,246,238,.12);
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(250,246,238,.04);
+  transition: border-color .2s;
+}
+.notify-form:focus-within {
+  border-color: rgba(201,107,40,.4);
+}
+
+.notify-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 14px 18px;
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--cream);
+  font-family: 'DM Sans', sans-serif;
+  letter-spacing: .03em;
+}
+.notify-input::placeholder { color: rgba(250,246,238,.2); }
+
+.notify-btn {
+  background: var(--amber);
+  border: none;
+  color: var(--cream);
+  padding: 14px 22px;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: 'DM Sans', sans-serif;
+  letter-spacing: .1em;
+  cursor: pointer;
+  transition: background .15s;
+  white-space: nowrap;
+}
+.notify-btn:hover { background: var(--amber-2); }
+
+.notify-note {
+  font-size: 10px;
+  letter-spacing: .06em;
+  color: rgba(250,246,238,.18);
+  text-align: center;
+  margin-top: 12px;
+}
+
+/* ── horizon rule ── */
+.horizon {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 6vh;
+  animation: fadeUp .9s .55s ease both;
+}
+.horizon-line {
+  flex: 1;
+  height: 0.5px;
+  background: rgba(250,246,238,.07);
+}
+.horizon-mark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ── three pillars ── */
+.pillars {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: rgba(250,246,238,.06);
+  border-radius: 14px;
+  overflow: hidden;
+  animation: fadeUp .9s .6s ease both;
+  margin-top: 6vh;
+}
+.pillar {
+  background: rgba(26,21,16,.6);
+  padding: 28px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.pillar-jp {
+  font-size: 28px;
+  color: rgba(201,107,40,.3);
+  line-height: 1;
+  font-family: 'Hiragino Sans', 'Yu Gothic', sans-serif;
+}
+.pillar-name {
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: rgba(250,246,238,.45);
+}
+.pillar-body {
+  font-size: 12px;
+  color: rgba(250,246,238,.22);
+  line-height: 1.65;
+}
+
+/* ── footer ── */
+.footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 32px;
+  border-top: 0.5px solid rgba(250,246,238,.06);
+  animation: fadeUp .9s .7s ease both;
+  margin-top: 5vh;
+}
+
+.footer-left {
+  font-size: 10px;
+  letter-spacing: .1em;
+  color: rgba(250,246,238,.16);
+}
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10px;
+  letter-spacing: .06em;
+  color: rgba(250,246,238,.16);
+}
+.footer-dot {
+  width: 4px; height: 4px;
+  border-radius: 50%;
+  background: var(--amber);
+  opacity: .4;
+}
+
+/* ── animations ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── success state ── */
+.success-msg {
+  font-size: 13px;
+  color: var(--amber);
+  text-align: center;
+  letter-spacing: .06em;
+  display: none;
+  padding: 14px;
+}
+
+/* ── responsive ── */
+@media (max-width: 560px) {
+  .page { padding: 36px 24px 36px; }
+  .pillars { grid-template-columns: 1fr; }
+  .pillar { padding: 20px 18px; }
+  .hero-display { font-size: 32px; }
+  .footer { flex-direction: column; gap: 12px; align-items: flex-start; }
+}
+</style>
 </head>
 <body>
-<p class="p1"><span class="s1">kurashi</span></p>
-<p class="p2"><span class="s1">ho</span></p>
-<p class="p3"><span class="s1">kurashiho.com</span></p>
-<p class="p4"><span class="s1"></span><br></p>
-<p class="p5"><span class="s1">A NEW KIND OF HOME INTELLIGENCE</span></p>
-<h1 style="margin: 0.0px 0.0px 28.0px 0.0px; text-align: center; font: 48.0px 'Helvetica Neue'; color: #f9f4ea; -webkit-text-stroke: #f9f4ea"><span class="s1">The hours you give<br>
-to your home should<br>
-</span><span class="s2">give back.</span></h1>
-<p class="p7"><span class="s1"></span><br></p>
-<p class="p8"><span class="s1">Every household carries an invisible weight. We've felt it too. And we've been quietly building something about it.</span></p>
-<p class="p9"><span class="s3">暮</span><span class="s4">らし</span><span class="s5">法</span><span class="s1">  ·  the method of daily life.</span></p>
-<p class="p9"><span class="s1">Not how you </span><span class="s6">decorate</span><span class="s1"> your home —</span></p>
-<p class="p9"><span class="s1">how you </span><span class="s6">tend</span><span class="s1"> to it.</span></p>
-<p class="p10"><span class="s1">BE THE FIRST TO KNOW</span></p>
-<p class="p11"><span class="s1"></span><br></p>
-<p class="p12"><span class="s1">Notify me</span></p>
-<p class="p13"><span class="s1">No noise. One email when we're ready.</span></p>
-<p class="p14"><span class="s7">暮</span></p>
-<p class="p15"><span class="s7">DAILY LIFE</span></p>
-<p class="p16"><span class="s7">A home that runs quietly in the background, so your attention can go elsewhere.</span></p>
-<p class="p14"><span class="s7">らし</span></p>
-<p class="p15"><span class="s7">LIVED RHYTHM</span></p>
-<p class="p16"><span class="s7">Not a to-do list. A daily rhythm that adapts to your household as it actually is.</span></p>
-<p class="p14"><span class="s7">法</span></p>
-<p class="p15"><span class="s7">THE METHOD</span></p>
-<p class="p16"><span class="s7">Intelligence that acts — anticipates, alerts, and does the thinking before you ask.</span></p>
-<p class="p17"><span class="s1">kurashiho.com  ·  2025</span></p>
-<p class="p18"><span class="s1"></span><br></p>
-<p class="p17"><span class="s1">Something is coming.</span></p>
+
+<div class="page">
+
+  <!-- top bar -->
+  <div class="topbar">
+    <div class="wordmark">
+      <span class="wm-k">kurashi</span><span class="wm-h">ho</span>
+    </div>
+    <div class="domain">kurashiho.com</div>
+  </div>
+
+  <!-- mark -->
+  <div class="mark-wrap">
+    <div class="mark-glow">
+      <svg width="100" height="100" viewBox="0 0 200 200">
+        <defs>
+          <clipPath id="mc">
+            <rect x="0" y="0" width="200" height="136"/>
+          </clipPath>
+        </defs>
+        <circle cx="100" cy="143" r="52" fill="#E8973C" clip-path="url(#mc)" opacity=".9"/>
+        <line x1="10" y1="136" x2="190" y2="136" stroke="#FAF6EE" stroke-width="1"/>
+        <line x1="86"  y1="136" x2="86"  y2="108" stroke="#FAF6EE" stroke-width="2.2" stroke-linecap="round"/>
+        <line x1="100" y1="136" x2="100" y2="84"  stroke="#FAF6EE" stroke-width="2.2" stroke-linecap="round"/>
+        <line x1="114" y1="136" x2="114" y2="100" stroke="#FAF6EE" stroke-width="2.2" stroke-linecap="round"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- hero -->
+  <div class="hero">
+    <div class="hero-overline">A new kind of home intelligence</div>
+    <h1 class="hero-display">
+      The hours you give<br>
+      to your home should<br>
+      <em>give back.</em>
+    </h1>
+    <div class="thin-line"></div>
+    <p class="hero-body">
+      Every household carries an invisible weight — the mental tallying of what's in the fridge, what's expiring, what needs buying, what's for dinner tonight. We've felt it too. And we've been quietly building something about it.
+    </p>
+  </div>
+
+  <!-- pullquote -->
+  <div class="pullquote">
+    暮らし法 &nbsp;·&nbsp; the method of daily life.<br>
+    Not how you <em>decorate</em> your home —<br>how you <em>tend</em> to it.
+  </div>
+
+  <!-- notify -->
+  <div class="notify-section">
+    <div class="notify-label">Be the first to know</div>
+    <div class="notify-form" id="nform">
+      <input
+        class="notify-input"
+        type="email"
+        placeholder="your@email.com"
+        id="email-input"
+        autocomplete="email"
+      >
+      <button class="notify-btn" onclick="handleNotify()">Notify me</button>
+    </div>
+    <div class="success-msg" id="success-msg">
+      You're on the list. We'll reach out soon.
+    </div>
+    <div class="notify-note" id="notify-note">No noise. One email when we're ready.</div>
+  </div>
+
+  <!-- pillars -->
+  <div class="pillars">
+    <div class="pillar">
+      <div class="pillar-jp">暮</div>
+      <div class="pillar-name">Daily life</div>
+      <div class="pillar-body">A home that runs quietly in the background, so your attention can go elsewhere.</div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-jp">らし</div>
+      <div class="pillar-name">Lived rhythm</div>
+      <div class="pillar-body">Not a to-do list. A daily rhythm that adapts to your household as it actually is.</div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-jp">法</div>
+      <div class="pillar-name">The method</div>
+      <div class="pillar-body">Intelligence that acts — anticipates, alerts, and does the thinking before you ask.</div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div class="footer">
+    <div class="footer-left">kurashiho.com &nbsp;·&nbsp; 2025</div>
+    <div class="footer-right">
+      <div class="footer-dot"></div>
+      <span>Something is coming.</span>
+    </div>
+  </div>
+
+</div>
+
+<script>
+function handleNotify() {
+  const input = document.getElementById('email-input');
+  const form  = document.getElementById('nform');
+  const msg   = document.getElementById('success-msg');
+  const note  = document.getElementById('notify-note');
+  const val   = input.value.trim();
+  const valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val);
+
+  if (!valid) {
+    form.style.borderColor = 'rgba(201,107,40,.6)';
+    input.placeholder = 'enter a valid email';
+    setTimeout(() => {
+      form.style.borderColor = '';
+      input.placeholder = 'your@email.com';
+    }, 2000);
+    return;
+  }
+
+  form.style.display  = 'none';
+  note.style.display  = 'none';
+  msg.style.display   = 'block';
+}
+</script>
+
 </body>
 </html>
